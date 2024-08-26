@@ -5,14 +5,14 @@ void wifiConTask() {
   disableCore1WDT();
 
   task.createTask(10000, [](void* pvParameter) {
-    auth.apiKey = "AIzaSyAGROtnNcRC-c0a2j05yHlQZQRDb2WUjiE";
-    auth.databaseURL = "https://testing-project-8edf2-default-rtdb.firebaseio.com/";
-    auth.projectID = "testing-project-8edf2";
+    auth.apiKey = " ";
+    auth.databaseURL = " ";
+    auth.projectID = " ";
 
-    auth.user.email = "admin@gmail.com";
-    auth.user.password = "admin123";
+    auth.user.email = " ";
+    auth.user.password = " ";
  }
-    firebase.connectToWiFi("Rapii", "lalalalala");
+    firebase.connectToWiFi(" ", " ");
     configTime(gmtOffset_sec, daylightOffset_sec, ntpServer);
     firebase.init(&auth);
 
@@ -111,8 +111,7 @@ void wifiConTask() {
 
     bot.begin([]() {
       client.setCACert(TELEGRAM_CERTIFICATE_ROOT);
-      // bot.setChatId("5466306657");
-      bot.setChatId("5160996543");
+      bot.setChatId(" ");
     });
 
     String welcomeMsg = "Welcome.\n";
