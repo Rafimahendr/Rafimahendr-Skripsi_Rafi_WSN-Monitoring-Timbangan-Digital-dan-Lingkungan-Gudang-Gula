@@ -27,8 +27,7 @@ FirebaseModule firebase;
 FirebaseAuthentication auth;
 Preferences preferences;
 WiFiClientSecure client;
-// TelegramBot bot("7214640769:AAEdnv6otMh-BMCIYlViIJvA_EP3LUj8QW4", client);
-TelegramBot bot("7207722695:AAEmFYTXlLEZwH_w98WSSTA9ZgobAjE2fCU", client);
+TelegramBot bot("your token telegram bot", client);
 TimerTask tempTimer(3000);
 
 ////////// Communication //////////
