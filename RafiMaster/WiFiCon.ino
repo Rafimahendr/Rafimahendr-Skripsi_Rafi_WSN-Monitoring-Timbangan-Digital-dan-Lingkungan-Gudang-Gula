@@ -5,12 +5,12 @@ void wifiConTask() {
   disableCore1WDT();
 
   task.createTask(10000, [](void* pvParameter) {
-    auth.apiKey = " ";
-    auth.databaseURL = " ";
-    auth.projectID = " ";
+    auth.apiKey = " your apiKey ";
+    auth.databaseURL = " your databaseURL ";
+    auth.projectID = " your projekID ";
 
-    auth.user.email = " ";
-    auth.user.password = " ";
+    auth.user.email = " your email firebase ";
+    auth.user.password = " your user password firebase ";
  }
     firebase.connectToWiFi(" ", " ");
     configTime(gmtOffset_sec, daylightOffset_sec, ntpServer);
@@ -111,7 +111,7 @@ void wifiConTask() {
 
     bot.begin([]() {
       client.setCACert(TELEGRAM_CERTIFICATE_ROOT);
-      bot.setChatId(" ");
+      bot.setChatId(" your ChatID Telegram ");
     });
 
     String welcomeMsg = "Welcome.\n";
